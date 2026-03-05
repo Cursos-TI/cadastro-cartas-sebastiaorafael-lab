@@ -13,6 +13,7 @@ int main() {
   char estado2, codigo2[4], nomeCidade2[50];
   int populacao2, pontosTuristicos2;
   float area2, pib2;
+  
    // Área para entrada de dados
   printf("-- Cadastro da Carta 1 -- \n");
   printf("Estado (A-H): ");
