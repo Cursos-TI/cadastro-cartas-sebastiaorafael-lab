@@ -14,7 +14,7 @@ int main() {
   float area1; 
   float pib1; 
   float densidadePopulacional1; // Variáveis para armazenar os cálculos automáticos da carta 1 - Nível Aventureiro
-  float pibpercarpita1; // Variáveis para armazenar os cálculos automáticos da carta 1 - Nível Aventureiro
+  float pibpercapita1; // Variáveis para armazenar os cálculos automáticos da carta 1 - Nível Aventureiro
 
   char estado2;
   char codigo2[4];
@@ -24,7 +24,7 @@ int main() {
   float area2; 
   float pib2; 
   float densidadePopulacional2; // Variáveis para armazenar os cálculos automáticos da carta 2 - Nível Aventureiro
-  float pibpercarpita2; // Variáveis para armazenar os cálculos automáticos da carta 2 - Nível Aventureiro
+  float pibpercapita2; // Variáveis para armazenar os cálculos automáticos da carta 2 - Nível Aventureiro
   
    // Área para entrada de dados - Nível Novato
   printf("-- Cadastro da Carta 1 -- \n");
@@ -44,10 +44,10 @@ int main() {
   scanf("%d", &pontosTuristicos1);
   
   // --- PROCESSAMENTO DE DADOS (Nível Aventureiro) ---
-// O sistema calcula automaticamente os novos atributos baseados nos dados inseridos
+// O sistema calcula automaticamente os novos atributos baseados nos dados adicionados
 // Usei (float) para garantir que a divisão entre inteiros não perca as casas decimais
   densidadePopulacional1 = (float) populacao1 / area1;
-  pibpercarpita1 = pib1 / (float) populacao1;
+  pibpercapita1 = pib1 / (float) populacao1;
 
 
 
@@ -72,7 +72,7 @@ int main() {
 // O sistema calcula automaticamente os novos atributos baseados nos dados inseridos
 // Usei (float) para garantir que a divisão entre inteiros não perca as casas decimais
   densidadePopulacional2 = (float) populacao2 / area2;
-  pibpercarpita2 = pib2 / (float) populacao2;
+  pibpercapita2 = pib2 / (float) populacao2;
 
   // Área para exibição dos dados da cidade
   printf("\n ----- CARTA 1 -----\n");
@@ -83,8 +83,8 @@ int main() {
   printf("Área: %.2f km²\n", area1);
   printf("PIB: %.2f bilhões de reais\n", pib1);
   printf("Pontos Turísticos: %d\n", pontosTuristicos1);
-  printf("Densidade Populacional: %.2f hab/km²\n", densidadePopulacional1);
-  printf("Pib Per Capita: %.2f reais\n", pibpercarpita1);
+  printf("Densidade Populacional: %.2f hab/km²\n", densidadePopulacional1); // Exibe a densidade populacional calculada com duas casas decimais (Nível Aventureiro)
+  printf("Pib Per Capita: %.2f reais\n", pibpercapita1); // Exibe o PIB per capita formatado para mostrar apenas dois dígitos após a vírgula (Nível Aventureiro)
 
 
   printf("\n ----- CARTA 2 -----\n");
@@ -95,8 +95,8 @@ int main() {
   printf("Área: %.2f km²\n", area2);
   printf("PIB: %.2f bilhões de reais\n", pib2);
   printf("Pontos Turísticos: %d\n", pontosTuristicos2);
-  printf("Densidade Populacional: %.2f hab/km²\n", densidadePopulacional2);
-  printf("Pib Per Capita: %.2f reais\n", pibpercarpita2);
+  printf("Densidade Populacional: %.2f hab/km²\n", densidadePopulacional2); // Exibe a densidade populacional calculada com duas casas decimais (Nível Aventureiro)
+  printf("Pib Per Capita: %.2f reais\n", pibpercapita2); // Exibe o PIB per capita formatado para mostrar apenas dois dígitos após a vírgula (Nível Aventureiro)
 
 
 return 0;
